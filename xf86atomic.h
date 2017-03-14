@@ -38,7 +38,7 @@
 #include "config.h"
 #endif
 
-#if HAVE_LIBDRM_ATOMIC_PRIMITIVES
+#ifdef HAVE_LIBDRM_ATOMIC_PRIMITIVES
 
 #define HAS_ATOMIC_OPS 1
 
@@ -57,7 +57,7 @@ typedef struct {
 
 #endif
 
-#if HAVE_LIB_ATOMIC_OPS
+#ifdef HAVE_LIB_ATOMIC_OPS
 #include <atomic_ops.h>
 
 #define HAS_ATOMIC_OPS 1
