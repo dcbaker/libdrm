@@ -14,10 +14,6 @@ indent_size = 4
 [{Makefile.*,*.mk}]
 indent_style = tab
 
-[*.m4]
-indent_style = space
-indent_size = 2
-
 [meson.build]
 indent_style = space
 indent_size = 2
