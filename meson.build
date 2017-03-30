@@ -289,5 +289,5 @@ endif
 
 libdrm_dep = declare_dependency(
   link_with : libdrm,
-  include_directories : include_directories('include/drm')
+  include_directories : include_directories('include/drm', '.')
 )
