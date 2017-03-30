@@ -18,7 +18,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-project('libdrm', 'c', version : '2.4.76-dev', default_options : ['-std=c99'])
+project('libdrm', 'c', version : '2.4.76-dev', default_options : ['-std=gnu99'])
 
 pkg = import('pkgconfig')
 
