@@ -286,3 +286,8 @@ subdir('tests')
 if get_option('manpages')
   subdir('man')
 endif
+
+libdrm_dep = declare_dependency(
+  link_with : libdrm,
+  include_directories : include_directories('include/drm')
+)
