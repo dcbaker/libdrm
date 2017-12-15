@@ -135,7 +135,35 @@ if HAVE_VMWGFX
 klibdrminclude_HEADERS += $(LIBDRM_INCLUDE_VMWGFX_H_FILES)
 endif
 
-EXTRA_DIST = include/drm/README
+EXTRA_DIST = \
+	include/drm/README \
+	amdgpu/meson.build \
+	etnaviv/meson.build \
+	exynos/meson.build \
+	freedreno/meson.build \
+	intel/meson.build \
+	libkms/meson.build \
+	man/meson.build \
+	nouveau/meson.build \
+	omap/meson.build \
+	radeon/meson.build \
+	tests/amdgpu/meson.build \
+	tests/etnaviv/meson.build \
+	tests/exynos/meson.build \
+	tests/kms/meson.build \
+	tests/kmstest/meson.build \
+	tests/modeprint/meson.build \
+	tests/nouveau/meson.build \
+	tests/proptest/meson.build \
+	tests/radeon/meson.build \
+	tests/tegra/meson.build \
+	tests/util/meson.build \
+	tests/vbltest/meson.build \
+	tests/meson.build \
+	vc4/meson.build \
+	data/meson.build \
+	meson.build \
+	meson_options.txt
 
 copy-headers :
 	cp -r $(kernel_source)/include/uapi/drm/*.h $(top_srcdir)/include/drm/
