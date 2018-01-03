@@ -33,7 +33,7 @@ files_freedreno = files(
   'msm/msm_ringbuffer.c',
 )
 
-if with_freedreno_kgsl != 'false'
+if with_freedreno_kgsl
   files_freedreno += files(
     'kgsl/kgsl_bo.c',
     'kgsl/kgsl_device.c',
