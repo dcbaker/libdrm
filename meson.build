@@ -23,7 +23,7 @@ project(
   ['c'],
   version : '2.4.105',
   license : 'MIT',
-  meson_version : '>= 0.43',
+  meson_version : '>= 0.46',
   default_options : ['buildtype=debugoptimized', 'c_std=gnu99'],
 )
 
@@ -342,8 +342,7 @@ if with_vmwgfx
 endif
 
 pkg.generate(
-  name : 'libdrm',
-  libraries : libdrm,
+  libdrm,
   subdirs : ['.', 'libdrm'],
   version : meson.project_version(),
   description : 'Userspace interface to kernel DRM services',

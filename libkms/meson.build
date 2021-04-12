@@ -59,8 +59,7 @@ ext_libkms = declare_dependency(
 install_headers('libkms.h', subdir : 'libkms')
 
 pkg.generate(
-  name : 'libkms',
-  libraries : libkms,
+  libkms,
   subdirs : ['libkms'],
   version : '1.0.0',
   requires_private : 'libdrm',

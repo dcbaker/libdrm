@@ -44,8 +44,7 @@ libdrm_amdgpu = library(
 install_headers('amdgpu.h', subdir : 'libdrm')
 
 pkg.generate(
-  name : 'libdrm_amdgpu',
-  libraries : libdrm_amdgpu,
+  libdrm_amdgpu,
   subdirs : ['.', 'libdrm'],
   version : meson.project_version(),
   requires_private : 'libdrm',

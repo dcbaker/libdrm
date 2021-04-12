@@ -46,8 +46,7 @@ install_headers(
 )
 
 pkg.generate(
-  name : 'libdrm_intel',
-  libraries : libdrm_intel,
+  libdrm_intel,
   subdirs : ['.', 'libdrm'],
   version : meson.project_version(),
   requires : 'libdrm',

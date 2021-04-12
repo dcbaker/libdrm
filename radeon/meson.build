@@ -48,8 +48,7 @@ install_headers(
 )
 
 pkg.generate(
-  name : 'libdrm_radeon',
-  libraries : libdrm_radeon,
+  libdrm_radeon,
   subdirs : ['.', 'libdrm'],
   version : meson.project_version(),
   requires_private : 'libdrm',

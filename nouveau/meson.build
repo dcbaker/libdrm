@@ -43,8 +43,7 @@ install_headers(
 )
 
 pkg.generate(
-  name : 'libdrm_nouveau',
-  libraries : libdrm_nouveau,
+  libdrm_nouveau,
   subdirs : ['.', 'libdrm', 'libdrm/nouveau'],
   version : meson.project_version(),
   requires_private : 'libdrm',

@@ -61,8 +61,7 @@ install_headers(
 )
 
 pkg.generate(
-  name : 'libdrm_freedreno',
-  libraries : libdrm_freedreno,
+  libdrm_freedreno,
   subdirs : ['.', 'libdrm', 'freedreno'],
   version : meson.project_version(),
   requires_private : 'libdrm',

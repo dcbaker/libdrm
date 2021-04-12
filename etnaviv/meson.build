@@ -39,8 +39,7 @@ libdrm_etnaviv = library(
 install_headers('etnaviv_drmif.h', subdir : 'libdrm')
 
 pkg.generate(
-  name : 'libdrm_etnaviv',
-  libraries : libdrm_etnaviv,
+  libdrm_etnaviv,
   subdirs : ['.', 'libdrm'],
   version : meson.project_version(),
   requires_private : 'libdrm',

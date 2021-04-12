@@ -37,8 +37,7 @@ ext_libdrm_tegra = declare_dependency(
 install_headers('tegra.h', subdir : 'libdrm')
 
 pkg.generate(
-  name : 'libdrm_tegra',
-  libraries : libdrm_tegra,
+  libdrm_tegra,
   subdirs : ['.', 'libdrm'],
   version : meson.project_version(),
   requires_private : 'libdrm',
